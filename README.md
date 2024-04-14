@@ -3,12 +3,19 @@
 # Interledger internals
 
 <div style="height: 20px;"></div>
-<center><img src="graphics/1ff7ef605d.png"></center>
+<center><img src="graphics/component_diagram.png"></center>
 <div style="height: 20px;"></div>
+<center> Image 1 -  Component diagram </center>
+<div style="height: 20px;"></div>
+<center><img src="graphics/sequence_diagram_success.png"></center>
+<div style="height: 20px;"></div>
+<center> Image 2 -  Sequence diagram (Success) </center>
+<div style="height: 20px;"></div>
+<center><img src="graphics/sequence_diagram_fail.png"></center>
+<div style="height: 20px;"></div>
+<center> Image 3 -  Sequence diagram (Fail) </center>
 
-
-
-Деньги судя по всему перемещаются не по схеме: отправитель-получатель, а по схеме: отправитель-коннектор-...-коннектор-получатель, т.е. каждая нода по очереди передает другой определенную сумму, если сделка состоялась
+Деньги перемещаются не по схеме: отправитель-получатель, а по схеме: отправитель-коннектор-...-коннектор-получатель, т.е. каждая нода по очереди передает другой определенную сумму, если сделка состоялась
 Атомарный и универсальные режимы:
 The Interledger protocol can be implemented in two modes: atomic mode and universal mode. In atomic mode, notaries are incorporated into the system. They are an ad-hoc group that is used to verify and validate transactions. Typically, atomic modes take place between trusted connector nodes between banks or financial service companies that might relate to each other.
 
