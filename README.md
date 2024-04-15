@@ -3,17 +3,17 @@
 # Interledger internals
 
 <div style="height: 20px;"></div>
-<center><img src="graphics/component_diagram.png"></center>
+<center><img src="graphics/29297cb652.png"></center>
 <div style="height: 20px;"></div>
-<center> Image 1 -  Component diagram </center>
+
 <div style="height: 20px;"></div>
-<center><img src="graphics/sequence_diagram_success.png"></center>
+<center><img src="graphics/dc9741344d.png"></center>
 <div style="height: 20px;"></div>
-<center> Image 2 -  Sequence diagram (Success) </center>
+
 <div style="height: 20px;"></div>
-<center><img src="graphics/sequence_diagram_fail.png"></center>
+<center><img src="graphics/b72530f2ea.png"></center>
 <div style="height: 20px;"></div>
-<center> Image 3 -  Sequence diagram (Fail) </center>
+
 
 Деньги перемещаются не по схеме: отправитель-получатель, а по схеме: отправитель-коннектор-...-коннектор-получатель, т.е. каждая нода по очереди передает другой определенную сумму, если сделка состоялась
 Атомарный и универсальные режимы:
@@ -22,7 +22,8 @@ The Interledger protocol can be implemented in two modes: atomic mode and univer
 The universal mode does not require notaries and can work between untrusted connectors. It uses Ripple’s internal cryptocurrency, XRP, to facilitate transfers. The transfer is accompanied by time constraints. If it does not take place within a certain timeframe, then the transaction is annulled.
 Адресация:
 https://interledger.org/developers/rfcs/ilp-addresses/
-Брал из статьи про архитектуру: 
+
+из статьи про архитектуру: 
 https://interledger.org/developers/rfcs/interledger-architecture/
 Информация по нодам:
 When two parties want to do business online, the one who sends money is the sender and the one who gets money is the receiver. If the sender and the receiver don't have some monetary system in common, they need one or more parties to connect them. In the Interledger architecture, connectors forward money through the network until it reaches the receiver.

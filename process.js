@@ -26,7 +26,6 @@ async function convert(t){
 	const subst = `<div style=\"height: 20px;\"></div>\n<center><img src="graphics/${id + ".png"}"></center>\n<div style=\"height: 20px;\"></div>`;
         const fromPos = m.index, toPos = m.index + m[0].length;
 	text = text.substring(0, fromPos) + subst + text.substring(toPos);
-	console.log(text);
     }
     return text;
 }
